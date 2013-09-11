@@ -1,0 +1,29 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %link{:href => "/assets/stylesheets/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "/assets/stylesheets/bootstrap-responsive.min.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "/assets/stylesheets/custom.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Roboto:400,500", :rel => "stylesheet", :type => "text/css"}
+    %title Pune.rb | Pune Ruby User Group
+    %meta{:content => "Pune Ruby User Group, Ruby, Sinatra, Rails, MRI, Rubinius, JRuby, mruby", :name => "keywords"}
+    %meta{:content => "Pune.rb is a Ruby User Group in the city of Pune. We assemble once a month for discussions, sort out technical problems, learn new stuff and share trending topics", :name => "description"}
+  %body
+    = yield
+    %script{:src => "/assets/javascripts/jquery-2.0.3.min.js", :type => "text/javascript"}
+    %script{:src => "/assets/javascripts/bootstrap.min.js", :type => "text/javascript"}
+    / Google Analytics Snippet
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-43790002-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type =
+       'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ?
+         'https://ssl' : 'http://www') +
+       '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(ga, s);
+       })();

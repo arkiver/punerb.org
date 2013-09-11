@@ -1,0 +1,116 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => "#"}
+        %h1 Pune.rb
+      .nav-collapse.collapse
+        %ul.nav.pull-right.social
+          %li.twitter
+            %a{:href => "https://twitter.com/punerb", :target => "_blank", :title => "Follow us on Twitter"} twitter
+          %li.facebook
+            %a{:href => "https://www.facebook.com/groups/punerb/", :target => "_blank", :title => "Like us on Facebook"} facebook
+          %li.irc
+            %a{:href => "irc://irc.freenode.net/punerb"} IRC
+          %li.google
+            %a{:href => "https://groups.google.com/forum/#!forum/puneruby", :target => "_blank"} Google
+          %li.github
+            %a{:href => "https://github.com/punerb", :target => "_blank"} Github
+
+.container
+  .row
+    .span12
+      %h3
+        Next Meet in #{@days} days on 14th September 2013 @ 11:00 AM
+        %a{:href => "http://www.meetup.com/PuneRailsMeetup/events/138316442/"} (RSVP)
+.location
+  %iframe{:frameborder => "0", :height => "350", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=+&q=thoughtworks+pune&ie=UTF8&hq=thoughtworks&hnear=Pune,+Maharashtra&t=m&cid=12742441231705345034&ll=18.572386,73.959618&spn=0.056953,0.32959&z=13&iwloc=A&output=embed", :width => "1920"}
+  %br/
+  %small
+    %a{:href => "https://maps.google.co.in/maps?f=q&source=embed&hl=en&geocode=+&q=thoughtworks+pune&ie=UTF8&hq=thoughtworks&hnear=Pune,+Maharashtra&t=m&cid=12742441231705345034&ll=18.572386,73.959618&spn=0.056953,0.32959&z=13&iwloc=A"}
+.container
+  .row
+    .span12
+      %h4 Previous Meetups
+      ThoughtWorks on 6th July 2013
+      %a{"data-toggle" => "modal", :href => "#jul2013"} [Details]
+      %br/
+      ThoughtWorks on 3rd August 2013
+      %a{"data-toggle" => "modal", :href => "#aug2013"} [Details]
+%hr/
+.container
+  .row
+    .span3
+      %h2 Join Us
+      %p
+        %a{:href => "https://groups.google.com/forum/?hl=en#!forum/puneruby"} Google Group
+      %p
+        %a{:href => "http://www.meetup.com/PuneRailsMeetup"} Meetup
+    .span3
+      %h2 Contact Us
+      %p
+        %a{:href => "mailto:puneruby@googlegroups.com", :target => "_blank"} PuneRuby
+        Mailing list
+    .span3
+      %h2 IRC Logs
+      %p
+        %a{:href => "http://bit.ly/punerb-logs", :target => "_blank"} #punerb
+        IRC Channel logs
+    .span3
+      %h2 Getting Started
+      %p
+        %a{:href => "http://rubymonk.com", :target => "_blank"} RubyMonk
+      %p
+        %a{:href => "http://mislav.uniqpath.com/poignant-guide/", :target => "_blank"} Why's (Poignant) Guide to Ruby
+      %p
+        %a{:href => "http://rubylearning.com", :target => "_blank"} Ruby Learning
+  %hr/
+#jul2013.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-header
+    %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} x
+    %h3#myModalLabel July 6th 2013
+  .modal-body
+    %h3 Details of the meetup
+    %p
+      Introduction to Ruby Pune User Group by Mohit Thatte [
+      %a{:href => "http://twitter.com/mohitthatte", :target => "_blank"}> @mohitthatte
+      ]
+    %p
+      %a{:href => "https://speakerdeck.com/anildigital/design-patterns-in-ruby", :target => "_blank"} Design Patterns in Ruby
+      by Anil Wadghule [
+      %a{:href => "http://twitter.com/anildigital", :target => "_blank"}> @anildigital
+      ]
+    %p
+      %a{:href => "http://www.slideshare.net/anupnivargi/conurrency", :target => "_blank"} Ruby Concurrency & Threads
+      by Anup Nivargi [
+      %a{:href => "http://twitter.com/noopq", :target => "_blank"}> @noopq
+      ]
+    %p
+      Ruby Arduino by Nishant Modak [
+      %a{:href => "http://twitter.com/nishantmodak", :target => "_blank"}> @nishantmodak
+      ]
+    %p
+      %a{:href => "http://more.punetech.com/event-report-puneruby-meetup", :target => "_blank"} Report
+      at Pune Tech
+#aug2013.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-header
+    %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} x
+    %h3#myModalLabel Aug 3rd 2013
+  .modal-body
+    %h3 Details of the meetup
+    %p
+      %a{:href => "http://dark-ruby.herokuapp.com"} Dark side of Ruby
+      by Gautam Rege & Khushnaseeb
+      [
+      = succeed "," do
+        %a{:href => "http://twitter.com/gautamrege", :target => "_blank"} @gautamrege
+      %a{:href => "http://twitter.com/cloakedsoul", :target => "_blank"} @cloakedsoul
+      ]
+    %p
+      %a{:href => "http://www.slideshare.net/mohitthatte/vagrant-puppetpunerug"} Vagrant + Puppet
+      by Mohit Thatte [
+      %a{:href => "http://twitter.com/mohitthatte", :target => "_blank"}> @mohitthatte
+      ]
